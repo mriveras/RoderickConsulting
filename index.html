@@ -1,24 +1,195 @@
 ﻿<!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="description" content="Roderick Consulting Web Site" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>Roderick Consulting</title>
-	<link rel="stylesheet" href="http://necolas.github.com/normalize.css/3.0.1/normalize.css">
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/styles.css">
-
+  <meta charset="UTF-8">
+  <meta name="description" content="Roderick Consulting Web Site" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Roderick Consulting</title>
+  <link rel="stylesheet" href="http://necolas.github.com/normalize.css/3.0.1/normalize.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body onresize="autoresize()">
-	<div id="home" class="container-fluid max-height">1</div>
-	<div id="about" class="container-fluid max-height">2</div>
-	<div id="blog" class="container-fluid max-height">3</div>
-	<div id="contact" class="container-fluid max-height">4</div>
+<body>
+<div id="wrap">
+  
+<header class="masthead" id="Home">
+    <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1><a href="#" title="Bootstrap Template">Roderick Consulting</a>
+          <p class="lead">Synergy – our goals are aligned with your business goals</p></h1>
+      </div>
+    </div>
+    </div>
+</header>
+  
+  
+<!-- Fixed navbar -->
+<div class="navbar navbar-custom navbar-inverse navbar-static-top" id="nav">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav nav-justified">
+          <li class="active"><a href="#Home">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="#Blog">Blog</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container -->
+</div><!--/.navbar -->
+  
+<!-- Begin page content -->
+<div class="divider" id="About"></div>
+  
+<div class="container">
+  <div class="col-sm-10 col-sm-offset-1">
+    <div class="page-header text-center">
+      <h1>Sticky Footer with Fly-in Navbar</h1>
+    </div>
+    
+    <p class="lead text-center">
+      Twitter Bootstrap is a front-end toolkit to rapidly build web applications.
+    </p>
+    <p class="text-center">
+      Bootstrap is a framework that uses some of the latest browser techniques to provide you with stylish typography, navigation, buttons, tables, etc. One of the primary changes in Bootstrap 3 is an emphasis on Mobile-First responsive design. The goal is to elevate the mobile experience to a first-class citizen of the design process, because several billion mobile users is quite a large market to tap into. So, sites built with the current Bootstrap version target mobile devices and scale for larger screens depending on screen size.
+    </p>
+  </div>
+</div>
+    
+<div class="divider" id="Services"></div>
+  
+<section class="bg-1">
+  <div class="col-sm-6 col-sm-offset-3 text-center"><h2 style="padding:20px;background-color:rgba(5,5,5,.8)">Try and Tweak Different Layouts</h2></div>
+</section>
+  
+<div class="divider"></div>
+   
+<div class="container" id="Blog">
+    <div class="col-sm-8 col-sm-offset-2 text-center">
+      <h1>Mobile-first + Responsive</h1>
+      
+      <p>
+      Instead of creating a unique version of the webpage for each desktop, mobile &amp; tablet, you can now create one design that works on all devices, browsers &amp; resolutions. Your designs will be future ready when a new table or phone size comes in the market, your designs will adapt itself and fit to the new screen size.
+      </p>
+      
+      <hr>
+      
+      <img src="http://s.bootply.com/assets/example/bg_smartphones.jpg" class="img-responsive">
+      
+      <hr>
+    </div><!--/col-->
+</div><!--/container-->
 
-	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-	<script src="js/less-1.7.0.js"></script>
-	<script src="js/screen_adjust.js"></script>
+<div class="divider"></div>
+
+<div class="divider" id="Contact"></div>
+
+<div class="row">
+
+  <h1 class="text-center">Where In The World?</h1>
+
+  <div id="map-canvas"></div>
+  
+  <hr>
+  
+  <div class="col-sm-8">
+      
+      <div class="row form-group">
+        <div class="col-xs-3">
+          <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required="">
+        </div>
+        <div class="col-xs-3">
+          <input type="text" class="form-control" id="middleName" name="firstName" placeholder="Middle Name" required="">
+        </div>
+        <div class="col-xs-4">
+          <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required="">
+        </div>
+      </div>
+      <div class="row form-group">
+          <div class="col-xs-5">
+          <input type="email" class="form-control" name="email" placeholder="Email" required="">
+          </div>
+          <div class="col-xs-5">
+          <input type="email" class="form-control" name="phone" placeholder="Phone" required="">
+          </div>
+      </div>
+      <div class="row form-group">
+          <div class="col-xs-10">
+          <input type="homepage" class="form-control" placeholder="Website URL" required="">
+          </div>
+      </div>
+      <div class="row form-group">
+          <div class="col-xs-10">
+            <button class="btn btn-default pull-right">Contact Us</button>
+          </div>
+      </div>
+    
+  </div>
+  <div class="col-sm-3 pull-right">
+
+      <address>
+        <strong>Roderick Consulting</strong><br>
+        5 Claremont Avenue<br>
+        Malvern, VIC 3144<br>
+        Australia<br>
+        T: (03) 9044 6069<br>
+        M: (04) 0785 2211
+      </address>
+    
+      <address>
+        <strong>Email Us</strong><br>
+        <a href="mailto:#">info@rederickconsulting.com.au</a>
+      </address>          
+  </div>
+  
+</div><!--/row-->
+
+<div class="container">
+    <div class="col-sm-8 col-sm-offset-2 text-center">
+      <h2>Beautiful Bootstrap Templates</h2>
+      
+      <hr>
+      <h4>
+        We love templates. We love Bootstrap.
+      </h4>
+      <p>Get more free templates like this at the <a href="http://bootply.com">Bootstrap Playground</a>, Bootply.</p>
+      <hr>
+      <ul class="list-inline center-block">
+        <li><a href="http://facebook.com/bootply"><img src="http://s.bootply.com/assets/example/soc_fb.png"></a></li>
+        <li><a href="http://twitter.com/bootply"><img src="http://s.bootply.com/assets/example/soc_tw.png"></a></li>
+        <li><a href="http://google.com/+bootply"><img src="http://s.bootply.com/assets/example/soc_gplus.png"></a></li>
+        <li><a href="http://pinterest.com/in1"><img src="http://s.bootply.com/assets/example/soc_pin.png"></a></li>
+      </ul>
+      
+    </div><!--/col-->
+</div><!--/container-->
+  
+</div><!--/wrap-->
+
+<div id="footer">
+  <div class="container">
+    <p class="text-muted">This Bootstrap Example courtesy <a href="http://www.bootply.com">Bootply.com</a></p>
+  </div>
+</div>
+
+<ul class="nav pull-right scroll-top">
+  <li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
+</ul>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false&extension=.js&output=embed"></script>
+
+<script src="js/scripts.js"></script>
+
 </body>
 </html>
