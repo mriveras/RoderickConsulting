@@ -1,6 +1,8 @@
 $(document).ready(function() {
-        
-            /* affix the navbar after scroll below header */
+
+  var windowHeight = $(window).innerHeight()-50;
+  $('header').css('min-height', windowHeight);
+
 $('#nav').affix({
       offset: {
         top: $('header').height()-$('#nav').height()
@@ -31,6 +33,8 @@ var map;
 function initialize() {
   var mapOptions = {
     zoom: 13,
+    panControl: true,
+    scrollwheel: false,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
   map = new google.maps.Map(document.getElementById('map-canvas'),
@@ -76,5 +80,11 @@ function handleNoGeolocation(errorFlag) {
 google.maps.event.addDomListener(window, 'load', initialize);
 
 
+
         
         });
+
+function autoresize() {
+  var windowHeight = $(window).innerHeight()-50;
+  $('header').css('height',windowHeight);
+}
