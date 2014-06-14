@@ -15,23 +15,21 @@
 <header class="masthead" id="Home">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12">
-        <img src="images/logofigure.png" class="img-responsive">
-        <h1><a href="#" title="Bootstrap Template">RODERICK CONSULTING</a>
-          <p class="lead">EFECTIVE SOLUTIONS</p></h1>
+      <div class="col-sm-10">
+        <img src="images/logofigure.png" class="img-responsive" id="principalLogo">
+        <h1>RODERICK CONSULTING<p class="lead">EFECTIVE SOLUTIONS</p></h1>
       </div>
      <!--  <div class="col-sm-4">
         <img src="images/logofigure.png" class="img-responsive">
       </div> -->
     </div>
     <div class="row">
-      <div class="col-sm-11 text-justify col-sm-offset-1">
+      <div class="col-sm-11 text-justify col-sm-offset-1" id="homeTextImage">
         <h2>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, illo ipsam cumque blanditiis voluptatum eligendi reiciendis molestiae omnis perferendis animi repudiandae id nulla fugit nisi veritatis libero consectetur. Natus, vitae?"</h2>
       </div>
     </div>
   </div>
 </header>
-  
   
 <!-- Fixed navbar -->
 <div class="navbar navbar-custom navbar-inverse navbar-static-top" id="nav">
@@ -59,9 +57,9 @@
 <div class="divider" id="About"></div>
   
 <div class="container">
-  <div class="col-sm-12 ">
+  <div class="col-sm-10 col-sm-offset-1">
     <div class="page-header text-center">
-      <h1>Synergy – our goals are aligned with your business goals</h1>
+      <h2>Synergy – our goals are aligned with your business goals</h2>
     </div>
     
     <p class="lead text-justify">
@@ -81,23 +79,30 @@
     
 <div class="divider" id="Services"></div>
   
-<section class="bg-1">
-  <div class="col-sm-6 col-sm-offset-3 text-center"><h2 style="padding:20px;background-color:rgba(5,5,5,.8)">Try and Tweak Different Layouts</h2></div>
+<section class="services">
+  <div class="col-sm-10 col-sm-offset-1" id="servicesTitle">
+    <h2>OUR SERVICES...</h2>
+  </div>
+  <div class="col-sm-4">
+    <div class="col-sm-8 text-center services-box right"><h3>BAS / IAS Return</h3></div>
+    <div class="col-sm-8 text-center services-box right"><h3>Bookkeeping</h3></div>
+    <div class="col-sm-8 text-center services-box right"><h3>Payroll</h3></div>
+  </div>
+  <div class="col-sm-4 text-center"><img src="images/logo.jpg"></div>
+  <div class="col-sm-4">
+    <div class="col-sm-8 text-center services-box left"><h3>﻿Management Reporting</h3></div>
+    <div class="col-sm-8 text-center services-box left"><h3>End of Year Services</h3></div>
+    <div class="col-sm-8 text-center services-box left"><h3>​Set up & design of your file</h3></div>
+  </div>
 </section>
   
-<div class="divider"></div>
+<div class="divider" id="Blog"></div>
    
-<div class="container" id="Blog">
-    <div class="col-sm-8 col-sm-offset-2 text-center">
-      <h1>Mobile-first + Responsive</h1>
+<div class="container" >
+    <div class="col-sm-10 col-sm-offset-2 text-center">
       
-      <p>
-      Instead of creating a unique version of the webpage for each desktop, mobile &amp; tablet, you can now create one design that works on all devices, browsers &amp; resolutions. Your designs will be future ready when a new table or phone size comes in the market, your designs will adapt itself and fit to the new screen size.
-      </p>
       
-      <hr>
-      
-      <img src="http://s.bootply.com/assets/example/bg_smartphones.jpg" class="img-responsive">
+      <img src="images/pedrochauca.jpg" class="img-responsive" id="pedroimg">
       
       <hr>
     </div><!--/col-->
@@ -108,14 +113,15 @@
 <div class="divider" id="Contact"></div>
 
 <div class="row">
-
-  <h1 class="text-center">Where we are located?</h1>
-
-  <div id="map-canvas"></div>
-  
+  <div class="col-xs-12">
+    <h2 class="text-center">CONTACT US...</h2>
+  </div>
+  <div class="col-xs-4">
+    <div id="map-canvas"></div>
+  </div>
   <hr>
   
-  <div class="col-sm-8">
+  <div class="col-sm-10">
       
       <div class="row form-group">
         <div class="col-xs-3">
@@ -138,7 +144,12 @@
       </div>
       <div class="row form-group">
           <div class="col-xs-10">
-          <input type="homepage" class="form-control" placeholder="Website URL" required="">
+          <select class="form-control" placeholder="Website URL" required="">
+            <option value="General">General</option>
+            <option value="Taxation">Taxation</option>
+            <option value="Employment">Employment</option>
+            <option value="Other">Other</option>
+          </select>
           </div>
       </div>
       <div class="row form-group">
@@ -166,32 +177,18 @@
   </div>
   
 </div><!--/row-->
-
-<div class="container">
-    <div class="col-sm-8 col-sm-offset-2 text-center">
-      <h2>Beautiful Bootstrap Templates</h2>
-      
-      <hr>
-      <h4>
-        We love templates. We love Bootstrap.
-      </h4>
-      <p>Get more free templates like this at the <a href="http://bootply.com">Bootstrap Playground</a>, Bootply.</p>
-      <hr>
-      <ul class="list-inline center-block">
-        <li><a href="http://facebook.com/bootply"><img src="http://s.bootply.com/assets/example/soc_fb.png"></a></li>
-        <li><a href="http://twitter.com/bootply"><img src="http://s.bootply.com/assets/example/soc_tw.png"></a></li>
-        <li><a href="http://google.com/+bootply"><img src="http://s.bootply.com/assets/example/soc_gplus.png"></a></li>
-        <li><a href="http://pinterest.com/in1"><img src="http://s.bootply.com/assets/example/soc_pin.png"></a></li>
-      </ul>
-      
-    </div><!--/col-->
-</div><!--/container-->
   
 </div><!--/wrap-->
 
 <div id="footer">
   <div class="container">
-    <p class="text-muted">Copyright 2014 Roderick Consulting. Developed by <a href="http://www.mauricioriverasenior.com">Mauricio Rivera Senior</a></p>
+    <div class="col-sm-10">
+      <p class="text-muted">Copyright 2014 Roderick Consulting. Developed by <a href="http://www.mauricioriverasenior.com">Mauricio Rivera Senior</a></p>
+    </div>
+    <div class="col-sm-4 text-right" id="logo_footer">
+      <img src="images/logofigure.png">
+      <p>Roderick Consulting</p>
+    </div>
   </div>
 </div>
 
