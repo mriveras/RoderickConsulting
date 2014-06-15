@@ -19,9 +19,11 @@ $('.scroll-top').click(function(){
 
 /* smooth scrolling for nav sections */
 $('#nav .navbar-nav li>a').click(function(){
+  event.preventDefault();
   var link = $(this).attr('href');
-  var posi = $(link).offset().top+20;
+  var posi = $(link).offset().top+10;
   $('body,html').animate({scrollTop:posi},700);
+
 })
 
 /* google maps */
