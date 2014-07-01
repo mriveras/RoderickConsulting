@@ -5,16 +5,15 @@
   <meta name="description" content="Roderick Consulting Web Site" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>Roderick Consulting</title>
-  <link rel="stylesheet" href="http://necolas.github.com/normalize.css/3.0.1/normalize.css">
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body onresize="autoresize()">
-<div id="wrap">
-  
-<header class="masthead" >
+<div id="wrap" >
+<header class="masthead" id="Home">
   <div class="container" >
-    <div class="row" id="Home">
+    <div class="row" >
       <div class="col-sm-10">
         <img src="images/logofigure.png" class="img-responsive" id="principalLogo">
         <h1>RODERICK CONSULTING<p class="lead">EFECTIVE SOLUTIONS</p></h1>
@@ -25,7 +24,7 @@
     </div>
     <div class="row">
       <div class="col-sm-11 text-justify col-sm-offset-1" id="homeTextImage">
-        <h2>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, illo ipsam cumque blanditiis voluptatum eligendi reiciendis molestiae omnis perferendis animi repudiandae id nulla fugit nisi veritatis libero consectetur. Natus, vitae?"</h2>
+        <h2></h2>
       </div>
     </div>
   </div>
@@ -54,9 +53,9 @@
 </div><!--/.navbar -->
   
 <!-- Begin page content -->
-<div class="divider" id="About"></div>
   
-<div class="container">
+<div class="container" id="About">
+  <div class="divider"></div>
   <div class="col-sm-10 col-sm-offset-1">
     <div class="page-header text-center">
       <h2>Synergy – our goals are aligned with your business goals</h2>
@@ -76,19 +75,15 @@
     </p>
   </div>
 </div>
-    
-<div class="divider" id="Services"></div>
   
-<section class="services">
-  <div class="col-sm-10 col-sm-offset-1" id="servicesTitle">
-    <h2>OUR SERVICES...</h2>
-  </div>
+<section id="Services" class="services">
+<div class="divider"></div>
   <div class="col-sm-4">
     <div class="col-sm-8 text-center services-box right"><h3>BAS / IAS Return</h3></div>
     <div class="col-sm-8 text-center services-box right"><h3>Bookkeeping</h3></div>
     <div class="col-sm-8 text-center services-box right"><h3>Payroll</h3></div>
   </div>
-  <div class="col-sm-4 text-center"><img src="images/logo.jpg"></div>
+  <div class="col-sm-4 text-center"><img id="logo_services" src="images/logo_roderickconsulting.jpg"></div>
   <div class="col-sm-4">
     <div class="col-sm-8 text-center services-box left"><h3>﻿Management Reporting</h3></div>
     <div class="col-sm-8 text-center services-box left"><h3>End of Year Services</h3></div>
