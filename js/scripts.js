@@ -25,8 +25,14 @@ $(document).ready(function() {
     $('body,html').animate({scrollTop:posi},700);
   })
 
-  $('header').css('background','url(images/'+backgroundImage+')');
+  $('header').css('background','url(images/'+backgroundImage+') no-repeat center center fixed');
+  $('header').css('background-size','100%');
+  $('header').css('-webkit-background-size','cover');
+  $('header').css('-moz-background-size','cover');
+  $('header').css('-o-background-size','cover');
   $('header').css('background-size','cover');
+
+
   $('#homeTextImage h2').html(backgroundText);
   console.log("imageText: " + backgroundText);
   /* google maps */
